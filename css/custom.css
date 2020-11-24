@@ -1,0 +1,201 @@
+/*GLOBAL*/
+
+:root {
+    --gsp-primary: #d4a373;
+    --gsp-body : #fefae0;
+    --gsp-text-black: #4f4f4f;
+    --gsp-footer: #ccd5ae;
+    --gsp-font-family: 'Poppins', sans-serif;
+    --gsp-text-white: #f9f9f9;
+    --gsp-font-bold : 400;
+    --gsp-font-light: var(--gsp-font-light)
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gsp-strong {
+    font-weight: var(--gsp-font-bold);
+}
+
+.gsp-light {
+    font-weight: var(--gsp-font-light)
+}
+
+.gps-primary-text {
+    color: var(--gsp-primary);
+}
+
+.gsp-button {
+    background: var(--gsp-primary);
+    color: var(--gsp-text-black);
+}
+
+.gsp-outline-button {
+    border-color: var(--gsp-primary);
+    color: var(--gsp-primary);
+}
+
+/*Header*/
+.custom-header {
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    -webkit-box-shadow: 2px 3px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 2px 3px 4px 0 rgba(0,0,0,.1);
+    position: relative;
+    padding: 0;
+    max-height: 100px;
+    height: 100px;
+}
+
+.custom-header ul li.nav-item a{
+    line-height: 100px;
+    color: var(--gsp-text-black);
+    font-size: 14px;
+    padding: 0 13px;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+/*End of Header*/
+
+/*Hero Banner*/
+
+.hero-banner {
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background: linear-gradient(0, #d4a37330 , #d4a37360), url('https://hotelhimalaya.com.np/images/slideshow/97mC0-lobby.jpg') center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-banner h1 {
+    color: var(--gsp-text-white);
+    margin-bottom: 3rem;
+}
+
+/*End of Hero banner*/
+
+/*Welcome to Section*/
+
+.welcome-section{
+    height: 50vh;
+    background: var(--gsp-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section img{
+    height: 35vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*We got fun and texts JK End of section*/
+
+/*Accommodation Section*/
+
+.accommodation-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*background: var(--gsp-body);*/
+}
+
+.accommodation-section h2 {
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.accommodation-section .padded-cards {
+    padding: 0 30px;
+}
+
+.accommodation-section .padded-cards .card {
+    background: transparent;
+    box-shadow: 0 0 transparent;
+}
+
+.accommodation-section .padded-cards .card-title {
+    font-weight: var(--gsp-font-bold);
+}
+
+.accommodation-section .padded-cards .card-text {
+    font-weight: var(--gsp-font-light)
+}
+
+.accommodation-section .padded-cards a {
+    color: var(--gsp-text-white);
+}
+
+.accommodation-section .card-img-top {
+    height: 30vh;
+    width: 100%;
+}
+
+/*Accommodation section*/
+
+/*Review Section*/
+
+.review-section {
+    text-align: center;
+    min-height: 50vh;
+    background: linear-gradient(0 , #d4a37380, #d4a37370) , url("https://hotelhimalaya.com.np/images/slideshow/97mC0-lobby.jpg");
+}
+
+.review-section-card {
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.review-section h3, .review-section h5 {
+    color: var(--gsp-text-white);
+}
+
+.review-section h5 {
+    font-weight: var(--gsp-font-light)
+}
+
+.review-section h3  {
+    font-weight: var(--gsp-font-bold);
+    letter-spacing: 1rem;
+}
+
+.review-section h4 {
+    font-weight: var(--gsp-font-bold);
+    color: var(--gsp-primary);
+}
+
+.review-section h6 {
+    font-weight: var(--gsp-font-light)
+}
+
+.review-section h3::before, .review-section h3::after {
+    content: '——————';
+    letter-spacing: -1rem;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+
+/*End of Review section 1/5*/
+
+
+/*Footer here*/
+.gsp-footer {
+    background: linear-gradient(0, #33333390, #33333390), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png');
+    color: var(--gsp-text-white);
+}
+
+.gsp-footer a {
+    color: var(--gsp-text-white) !important;
+}
+
+/*End of footer*/
