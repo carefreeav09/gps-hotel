@@ -1,43 +1,52 @@
 /*GLOBAL*/
-
 :root {
-    --gsp-primary: #d4a373;
-    --gsp-body : #fefae0;
-    --gsp-text-black: #4f4f4f;
-    --gsp-footer: #ccd5ae;
-    --gsp-font-family: 'Poppins', sans-serif;
-    --gsp-text-white: #f9f9f9;
-    --gsp-font-bold : 400;
-    --gsp-font-light: var(--gsp-font-light)
+    --gps-primary: #d4a373;
+    --gps-body : #fefae0;
+    --gps-text-black: #4f4f4f;
+    --gps-footer: #ccd5ae;
+    --gps-font-family: 'Poppins', sans-serif;
+    --gps-text-white: #f9f9f9;
+    --gps-font-bold : 400;
+    --gps-font-light: var(--gps-font-light)
+}
+
+body {
+    background: var(--gps-body);
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', serif;
 }
 
-.gsp-strong {
-    font-weight: var(--gsp-font-bold);
+.gps-strong {
+    font-weight: var(--gps-font-bold);
 }
 
-.gsp-light {
-    font-weight: var(--gsp-font-light)
+.gps-light {
+    font-weight: var(--gps-font-light)
 }
 
 .gps-primary-text {
-    color: var(--gsp-primary);
+    color: var(--gps-primary);
 }
 
-.gsp-button {
-    background: var(--gsp-primary);
-    color: var(--gsp-text-black);
+.gps-button {
+    background: var(--gps-primary);
+    color: var(--gps-text-white);
 }
 
-.gsp-outline-button {
-    border-color: var(--gsp-primary);
-    color: var(--gsp-primary);
+.gps-button:hover {
+    background: #ac855d;
+    color: var(--gps-text-white);
+}
+
+.gps-outline-button {
+    border-color: var(--gps-primary);
+    color: var(--gps-primary);
 }
 
 /*Header*/
+
 .custom-header {
     left: 0;
     right: 0;
@@ -49,11 +58,12 @@
     padding: 0;
     max-height: 100px;
     height: 100px;
+    background: #f9f9f9;
 }
 
 .custom-header ul li.nav-item a{
     line-height: 100px;
-    color: var(--gsp-text-black);
+    color: var(--gps-text-black);
     font-size: 14px;
     padding: 0 13px;
     position: relative;
@@ -62,6 +72,8 @@
     text-transform: uppercase;
 }
 /*End of Header*/
+
+/*------------------------------------------------------------------*/
 
 /*Hero Banner*/
 
@@ -75,7 +87,7 @@
 }
 
 .hero-banner h1 {
-    color: var(--gsp-text-white);
+    color: var(--gps-text-white);
     margin-bottom: 3rem;
 }
 
@@ -85,7 +97,7 @@
 
 .welcome-section{
     height: 50vh;
-    background: var(--gsp-body);
+    background: var(--gps-body);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +118,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /*background: var(--gsp-body);*/
+    /*background: var(--gps-body);*/
 }
 
 .accommodation-section h2 {
@@ -124,15 +136,15 @@
 }
 
 .accommodation-section .padded-cards .card-title {
-    font-weight: var(--gsp-font-bold);
+    font-weight: var(--gps-font-bold);
 }
 
 .accommodation-section .padded-cards .card-text {
-    font-weight: var(--gsp-font-light)
+    font-weight: var(--gps-font-light)
 }
 
 .accommodation-section .padded-cards a {
-    color: var(--gsp-text-white);
+    color: var(--gps-text-white);
 }
 
 .accommodation-section .card-img-top {
@@ -156,25 +168,25 @@
 }
 
 .review-section h3, .review-section h5 {
-    color: var(--gsp-text-white);
+    color: var(--gps-text-white);
 }
 
 .review-section h5 {
-    font-weight: var(--gsp-font-light)
+    font-weight: var(--gps-font-light)
 }
 
 .review-section h3  {
-    font-weight: var(--gsp-font-bold);
+    font-weight: var(--gps-font-bold);
     letter-spacing: 1rem;
 }
 
 .review-section h4 {
-    font-weight: var(--gsp-font-bold);
-    color: var(--gsp-primary);
+    font-weight: var(--gps-font-bold);
+    color: var(--gps-primary);
 }
 
 .review-section h6 {
-    font-weight: var(--gsp-font-light)
+    font-weight: var(--gps-font-light)
 }
 
 .review-section h3::before, .review-section h3::after {
@@ -184,18 +196,139 @@
     margin-right: 20px;
 }
 
-
 /*End of Review section 1/5*/
 
+/*------------------------------------------------------------------*/
 
-/*Footer here*/
-.gsp-footer {
+/*Room Pages*/
+
+/*Banner section*/
+.room-banner-section {
+    max-height: 60vh;
     background: linear-gradient(0, #33333390, #33333390), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png');
-    color: var(--gsp-text-white);
+    height: 60vh;
+
 }
 
-.gsp-footer a {
-    color: var(--gsp-text-white) !important;
+/*End of banner section*/
+
+/*Room Info Section*/
+
+.room-info-section {
+    text-align: center;
+}
+
+.room-info-section h1 {
+    color: var(--gps-primary);
+    font-weight: var(--gps-font-bold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.room-info-section h6 {
+    font-weight: var(--gps-font-light);
+}
+
+/*End of Room Info Section*/
+
+
+/*Room Carousel screen*/
+
+.room-info-carousel {
+    background: var(--gps-body);
+}
+
+.room-info-carousel .carousel-thumbnails .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-right: initial;
+    margin-left: initial;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.room-info-carousel .carousel-indicators li {
+    height: 100px;
+    width: 100px !important;
+}
+
+.room-info-carousel .carousel-indicators li {
+    height: 50px;
+    width: 100px !important;
+}
+/* end of Room Carousel screen */
+
+/*Room Info Facilities*/
+
+.room-info-facilities {
+    background: var(--gps-body);
+}
+
+.room-info-facilities ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.room-info-facilities ul li {
+    font-weight: 200;
+    color: var(--gps-text-black);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.room-info-facilities h1 {
+    color: var(--gps-primary);
+    font-weight: var(--gps-font-bold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.room-info-facilities h1::before,
+.room-info-facilities h1::after{
+    content: '-----'
+}
+
+/*End Room Info Facilities*/
+
+/* Room Cards List */
+
+.room-cards {
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.room-cards .card-body {
+    padding: 3rem;
+}
+
+.room-cards .card-img-top {
+    height: 250px;
+}
+
+.room-cards .card-body .card-title {
+    font-weight: var(--gps-font-bold);
+}
+
+.room-cards .card-body .card-text {
+    font-weight: var(--gps-font-light);
+ }
+
+/* Room cards list */
+
+/*------------------------------------------------------------------*/
+
+/**/
+
+/*Footer here*/
+.gps-footer {
+    background: linear-gradient(0, #33333390, #33333390), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png');
+    color: var(--gps-text-white);
+}
+
+.gps-footer a {
+    color: var(--gps-text-white) !important;
 }
 
 /*End of footer*/
