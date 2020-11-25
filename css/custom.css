@@ -410,14 +410,42 @@ body {
     background: var(--gps-primary) !important;
     color: var(--gps-text-white) !important;
     border-radius: 10% !important;
-
-}
-
-.gallery-sections img {
-
 }
 
 
+/*------------------------------------------------------------------*/
+
+/* About sections*/
+
+.about-banner-section {
+    max-height: 40vh;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png') top;
+    height: 40vh;
+}
+
+.about-section {
+    padding: 5rem;
+    text-align: center;
+}
+
+.about-section h1{
+    color: var(--gps-primary);
+    font-weight: var(--gps-font-bold);
+    letter-spacing: 2px;
+}
+
+.about-section p{
+    color: var(--gps-text-black);
+    font-weight: var(--gps-font-light);
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.about-section img {
+    height: 40vh;
+    width: 100%;
+}
+/**/
 /*------------------------------------------------------------------*/
 
 /*Footer here*/
