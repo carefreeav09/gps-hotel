@@ -445,7 +445,54 @@ body {
     height: 40vh;
     width: 100%;
 }
-/**/
+/*End of About */
+/*------------------------------------------------------------------*/
+
+/*Contact us page*/
+
+.contact-banner-section {
+    max-height: 40vh;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png') top;
+    height: 40vh;
+}
+
+.contact-section {
+    padding: 5rem;
+}
+
+.contact-section .list-group-item{
+    background: transparent;
+    border: 0;
+}
+
+.contact-section h1, h3{
+    color: var(--gps-primary);
+    font-weight: var(--gps-font-bold);
+    letter-spacing: 2px;
+}
+
+.contact-section p {
+    font-weight: var(--gps-font-bold);
+    font-size: 16px;
+}
+
+.contact-section p span {
+    font-size: 14px;
+}
+
+.contact-section input, .contact-section select {
+    height: 60px;
+    border-color: gainsboro;
+    border-radius: 10px;
+}
+
+.contact-section textarea{
+    border-color: gainsboro;
+    border-radius: 10px;
+}
+
+/*End of Contact us page*/
+
 /*------------------------------------------------------------------*/
 
 /*Footer here*/
