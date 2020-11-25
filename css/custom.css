@@ -207,7 +207,6 @@ body {
     max-height: 60vh;
     background: linear-gradient(0, #33333390, #33333390), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png');
     height: 60vh;
-
 }
 
 /*End of banner section*/
@@ -319,11 +318,59 @@ body {
 
 /*------------------------------------------------------------------*/
 
-/**/
+/* Services Pages*/
+
+/*Services banner*/
+
+.services-banner-section {
+    max-height: 40vh;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png') top;
+    height: 40vh;
+}
+
+.services-pages-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.services-pages-texts h1{
+    color: var(--gps-primary);
+    font-weight: var(--gps-font-bold);
+    letter-spacing: 2px;
+}
+
+.services-pages-texts h6{
+    color: var(--gps-text-black);
+    font-weight: var(--gps-font-light);
+    letter-spacing: 2px;
+}
+
+.services-section {
+    margin-bottom: 3rem;
+}
+
+.services-section .services-section-card{
+    margin: 0 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-section i {
+    color: var(--gps-primary);
+}
+
+/*End of services banners*/
+
+
+
+/*------------------------------------------------------------------*/
+
 
 /*Footer here*/
 .gps-footer {
-    background: linear-gradient(0, #33333390, #33333390), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png');
+    background:  linear-gradient(0, #33333390, #33333390),url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png');
     color: var(--gps-text-white);
 }
 
