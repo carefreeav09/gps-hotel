@@ -363,10 +363,62 @@ body {
 
 /*End of services banners*/
 
+/*------------------------------------------------------------------*/
+
+/* Gallery Pages*/
+
+.gallery-banner-section {
+    max-height: 40vh;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/88901e46917757.586a89fac9eb9.png') top;
+    height: 40vh;
+}
+
+.gallery-pages-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.gallery-pages-texts h1{
+    color: var(--gps-primary);
+    font-weight: var(--gps-font-bold);
+    letter-spacing: 2px;
+}
+
+.gallery-pages-texts h6{
+    color: var(--gps-text-black);
+    font-weight: var(--gps-font-light);
+    letter-spacing: 2px;
+}
+
+.gallery-sections {
+    text-align: center;
+}
+
+.gallery-sections ul {
+    justify-content: center;
+}
+
+.gallery-sections ul li a {
+    background: #333;
+    color: var(--gps-text-black) !important;
+    border-radius: 10% !important;
+}
+
+.gallery-sections ul li a.active {
+    background: var(--gps-primary) !important;
+    color: var(--gps-text-white) !important;
+    border-radius: 10% !important;
+
+}
+
+.gallery-sections img {
+
+}
 
 
 /*------------------------------------------------------------------*/
-
 
 /*Footer here*/
 .gps-footer {
