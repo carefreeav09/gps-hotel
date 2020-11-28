@@ -13,6 +13,13 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
     />
     <!-- MDB -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+
     <link rel="stylesheet" href="./css/mdb.min.css"/>
     <link rel="stylesheet" href="./css/custom.css">
     <title>GPS Hotels</title>
@@ -20,7 +27,7 @@
 <body>
 <nav class="navbar navbar-expand-lg custom-header">
     <div class="container">
-        <a class="navbar-brand" href="/gps-hotel/">
+        <a class="navbar-brand" href="/">
             <img
                     src="./images/gps.png"
                     height="70"
@@ -44,10 +51,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/gps-hotel/room.html">Rooms</a>
+                    <a class="nav-link active" aria-current="page" href="/room.html">Rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/gps-hotel/services.html">SERVICES</a>
+                    <a class="nav-link" href="/services.html">SERVICES</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a
@@ -61,7 +68,7 @@
                         About is here
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/gps-hotel/about.html">About</a></li>
+                        <li><a class="dropdown-item" href="/about.html">About</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li>
                             <hr class="dropdown-divider"/>
@@ -72,13 +79,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                                        <a class="nav-link" href="/gps-hotel/gallery.html" tabindex="-1" aria-disabled="true"
+                                        <a class="nav-link" href="/gallery.html" tabindex="-1" aria-disabled="true"
                     >Gallery</a
                     >
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/gps-hotel/contact.html" tabindex="-1" aria-disabled="true"
+                    <a class="nav-link" href="/contact.html" tabindex="-1" aria-disabled="true"
                     >Contact us</a
                     >
                 </li>
@@ -122,7 +129,7 @@
                 </div>
 
                 <!-- Send button -->
-                <button class="btn btn-info gps-button btn-lg" type="submit">Send Message</button>
+                <button class="btn btn-info gps-button btn-lg btn-rounded" type="submit">Send Message</button>
 
             </form>
             <!-- Default form contact -->
@@ -197,6 +204,9 @@
     </div>
 </section>
 
+<section class="contact-page-google-maps">
+    <div id="map"></div>
+</section>
 <!-- Footer -->
 <footer class="page-footer font-small stylish-color-dark pt-4 gps-footer">
 
@@ -361,7 +371,17 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+    let map;
 
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+        });
+    }
+
+</script>
 <script>
 
 </script>

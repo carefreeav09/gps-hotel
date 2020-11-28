@@ -18,6 +18,12 @@ body {
     font-family: 'Poppins', serif;
 }
 
+.card {
+    background: transparent;
+    border: 0;
+    box-shadow: 0 0 transparent;
+}
+
 .gps-strong {
     font-weight: var(--gps-font-bold);
 }
@@ -78,9 +84,8 @@ body {
 /*Hero Banner*/
 
 .hero-banner {
-    height: calc(100vh - 100px);
+    height: 100vh;
     background-size: cover;
-    background: linear-gradient(0, #d4a37330 , #d4a37360), url('https://hotelhimalaya.com.np/images/slideshow/97mC0-lobby.jpg') center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -314,6 +319,45 @@ body {
     font-weight: var(--gps-font-light);
  }
 
+.rooms-similar-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*background: var(--gps-body);*/
+}
+
+.rooms-similar-section h2 {
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.rooms-similar-section .padded-cards {
+    padding: 0 30px;
+}
+
+.rooms-similar-section .padded-cards .card {
+    background: transparent;
+    box-shadow: 0 0 transparent;
+}
+
+.rooms-similar-section .padded-cards .card-title {
+    font-weight: var(--gps-font-bold);
+}
+
+.rooms-similar-section .padded-cards .card-text {
+    font-weight: var(--gps-font-light)
+}
+
+.rooms-similar-section .padded-cards a {
+    color: var(--gps-text-white);
+}
+
+.rooms-similar-section .card-img-top {
+    height: 30vh;
+    width: 100%;
+}
+
 /* Room cards list */
 
 /*------------------------------------------------------------------*/
@@ -491,6 +535,15 @@ body {
     border-radius: 10px;
 }
 
+.contact-page-google-maps {
+    height: 400px;
+    width: 100vw;
+}
+
+#map {
+    height: 100%;
+}
+
 /*End of Contact us page*/
 
 /*------------------------------------------------------------------*/
@@ -503,6 +556,20 @@ body {
 
 .gps-footer a {
     color: var(--gps-text-white) !important;
+}
+
+.gps-footer img {
+    height: 100px;
+    width: 150px;
+}
+
+.gps-footer h6{
+    font-size: larger;
+}
+
+.gps-footer li {
+    padding-bottom: 20px;
+    font-size: larger;
 }
 
 /*End of footer*/
