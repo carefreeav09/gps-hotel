@@ -51,6 +51,18 @@ body {
     color: var(--gps-primary);
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*Header*/
 
 .custom-header {
@@ -546,6 +558,123 @@ body {
 
 /*End of Contact us page*/
 
+/*Booking page*/
+
+.booking-system-section {
+    background: linear-gradient(0 , #0d0d0d58, #0d0d1db0),  url('https://www.rojai.com/images/hotelapi/VX2QM-2019_11_04.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.booking-system-section .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-system-section .logo > img {
+    height: 200px;
+    width: 250px;
+}
+
+.booking-section-cards
+{
+    margin-top: 20px;
+    background: whitesmoke;
+}
+
+.booking-section-cards .card-body {
+    padding: 0;
+}
+
+.booking-section-cards .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: white
+}
+
+.booking-section-cards .card-content .card{
+    background: #eee;
+    padding: 30px;
+}
+
+.booking-section-cards .card-content img {
+    height: 150px;
+    width: 100%;
+}
+
+.booking-section-cards .black-box {
+    background: black;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.room .price ul li .tag .discount {
+    background: #ff9c00;
+    border-radius: 0;
+    padding: 2px 4px;
+    color: #fff;
+    display: block;
+    position: relative;
+}
+
+.room .price ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.room .price ul li {
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+.room .price ul li .icon {
+    vertical-align: top;
+    width: 48px;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.room .price ul li .tag .discount:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 9px solid #ff9c00;
+    display: inline-block;
+    position: absolute;
+    left: -9px;
+    top: 0;
+}
+
+.room .price ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+.totalPrice {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    background: #ccc;
+    color: white;
+}
+
+.totalPrice h1 {
+    padding: 20px;
+}
+
+/*Booking page ends here*/
+
 /*------------------------------------------------------------------*/
 
 /*Footer here*/
@@ -573,3 +702,4 @@ body {
 }
 
 /*End of footer*/
+
