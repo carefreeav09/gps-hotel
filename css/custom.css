@@ -686,6 +686,13 @@ body {
     width: auto !important;
 }
 
+.room-carousel img {
+}
+
+.modal-carousel-item {
+    height: 300px;
+    width: 100%;
+}
 /*Booking page ends here*/
 
 /*------------------------------------------------------------------*/
