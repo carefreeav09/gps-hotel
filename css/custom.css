@@ -673,6 +673,19 @@ body {
     padding: 20px;
 }
 
+.boxed-item {
+    border: 1px solid gainsboro;
+    background: #f0f0f0;
+    color: black;
+    font-size: small;
+    padding: 5px
+}
+
+.payment-options {
+    height: 80px !important;
+    width: auto !important;
+}
+
 /*Booking page ends here*/
 
 /*------------------------------------------------------------------*/
