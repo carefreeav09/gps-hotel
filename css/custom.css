@@ -96,7 +96,7 @@ body {
 /*Hero Banner*/
 
 .hero-banner {
-    height: 100vh;
+    height: 60vh;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -596,6 +596,12 @@ body {
     color: white
 }
 
+@media (max-width: 768px) {
+    .booking-section-cards .card-title {
+        display: block;
+    }
+}
+
 .booking-section-cards .card-content .card{
     background: #eee;
     padding: 30px;
@@ -630,6 +636,24 @@ body {
 .room .price ul li {
     vertical-align: top;
     margin: 0 15px 0 0;
+}
+
+@media (max-width: 768px) {
+    .room .price ul li {
+        display: block !important;
+        margin: 20px !important;
+    }
+
+    .room .flex-space-between {
+        display: block;
+    }
+
+    .totalPrice{
+        width: 100% !important;
+        margin-top: 2rem;
+    }
+
+
 }
 
 .room .price ul li .icon {
@@ -686,6 +710,12 @@ body {
     width: auto !important;
 }
 
+@media (max-width: 768px) {
+    .payment-options{
+        width: 100% !important;
+    }
+}
+
 .room-carousel img {
 }
 
@@ -723,3 +753,40 @@ body {
 
 /*End of footer*/
 
+
+.banner-carousel-style {
+    height: calc(100vh - 100px)
+}
+
+@media (max-width: 768px) {
+    .banner-carousel-style {
+        height: calc(60vh)
+    }
+
+    .welcome-section, .accommodation-section {
+        display: block;
+        margin-top: 3rem;
+    }
+
+    .padded-cards {
+        padding: 5px;
+    }
+
+    .welcome-section {
+        height: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .small-screen-padding {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .small-screen-vertical-padding {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

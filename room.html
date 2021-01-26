@@ -96,7 +96,7 @@
 <!--<section class="room-banner-section">-->
 <!--</section>-->
 
-<section class="room-info-section">
+<section class="room-info-section small-screen-vertical-padding">
     <div class="container p-md-5">
         <h1>
             Deluxe Room
@@ -119,7 +119,7 @@
     </div>
 </section>
 
-<section class="room-info-carousel">
+<section class="room-info-carousel small-screen-padding">
     <div class="container px-md-5">
         <!--Carousel Wrapper-->
         <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
@@ -172,7 +172,7 @@
     </div>
 </section>
 
-<section class="room-info-facilities">
+<section class="room-info-facilities small-screen-padding">
     <div class="container p-md-5 text-center">
         <h1 class="mb-5">
             Facilities
@@ -204,7 +204,7 @@
     </div>
 </section>
 
-<section class="rooms-list">
+<section class="rooms-list small-screen-padding">
     <div class="container px-md-5">
         <div class="row">
             <div class="col-md-4 room-cards">
@@ -347,9 +347,9 @@
     </div>
 </section>
 
-<section class="rooms-similar-section my-5">
+<section class="rooms-similar-section small-screen-padding my-5">
     <div class="container">
-        <h2 class="mb-md-5">
+        <h2 class="mb-md-5 small-screen-vertical-padding">
             Similar Rooms
         </h2>
 
@@ -702,6 +702,27 @@
             slidesToScroll: 1,
             centerMode: false,
             arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
     });
 </script>
